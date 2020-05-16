@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Configurando Usuário e Senha no Git/Github - Lucas Joviniano</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="Configurando Usuário e Senha no Git/Github">
+<meta itemprop="description" content="Configurando o Github para fazer push mais rápido">
+<meta itemprop="datePublished" content="2020-05-16T00:00:00&#43;03:00" />
+<meta itemprop="dateModified" content="2020-05-16T00:00:00&#43;03:00" />
+<meta itemprop="wordCount" content="282">
+
+
+
+<meta itemprop="keywords" content="Git,Github,Programação,Tutorial," /><meta property="og:title" content="Configurando Usuário e Senha no Git/Github" />
+<meta property="og:description" content="Configurando o Github para fazer push mais rápido" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://lucasjoviniano.github.io/posts/2020-05-16-configurando-usuario-e-senha-no-github/" />
+<meta property="article:published_time" content="2020-05-16T00:00:00+03:00" />
+<meta property="article:modified_time" content="2020-05-16T00:00:00+03:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Configurando Usuário e Senha no Git/Github"/>
+<meta name="twitter:description" content="Configurando o Github para fazer push mais rápido"/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://lucasjoviniano.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://lucasjoviniano.github.io/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://lucasjoviniano.github.io/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://lucasjoviniano.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://lucasjoviniano.github.io/">
+				<img src="/images/misc/eu.jpg" alt="Lucas Joviniano" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://lucasjoviniano.github.io/">Lucas Joviniano</a></h1>
+	<div class="site-description"><p>Escrevendo sobre tecnologia, cinema, literatura e qualquer outra coisa que me interesse.</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/lucasjoviniano" title="Github"><i data-feather="github"></i></a></li><li><a href="https://www.linkedin.com/in/lucasjoviniano/" title="Linkedin"><i data-feather="linkedin"></i></a></li><li><a href="https://www.instagram.com/lucas.joviniano/" title="Instagram"><i data-feather="instagram"></i></a></li><li><a href="https://open.spotify.com/user/lucasjoviniano" title="Spotify"><i data-feather="headphones"></i></a></li></ul>
+		</nav><span class="scheme-toggle"><a href="#" id="scheme-toggle"></a></div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">Posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">Sobre</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">16</span>
+							<span class="rest">Maio 2020</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Configurando Usuário e Senha no Git/Github</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>Toda vez que fazemos um <em>push</em> num repositório pro Github precisamos informar o email e a senha. Com o tempo, isso se torna um trabalho tedioso e, como bons programadores que somos, seria uma boa automatizar esse processo. Sendo assim, vou ensinar como configurar <strong>chaves SSH</strong> para fazer a autenticação.</p>
+<h2 id="criando-a-chave-ssh">Criando a Chave SSH</h2>
+<p>O primeiro passo é criar a chave SSH localmente. No terminal, utilize o comando</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-keygen -t rsa -b 4096 -C <span style="color:#a31515">&#34;email_do_github&#34;</span>
+</code></pre></div><p>Substituindo o <em>email_do_github</em> pelo endereço de email da sua conta. O comando irá solicitar um nome para a chave e uma senha (que não precisa ser a mesma do Github).</p>
+<h2 id="adicionando-a-chave-no-sistema">Adicionando a Chave no Sistema</h2>
+<p>Com a chave em mãos, devemos colocá-la no <em><strong>ssh-agent</strong></em> para que o computador a detecte automaticamente.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">eval <span style="color:#00f">$(</span>ssh-agent<span style="color:#00f">)</span>
+ssh-add &lt;NOME_DA_CHAVE&gt;
+</code></pre></div><p>Substiuindo o nome da chave pelo nome que você deu anteriormente.</p>
+<h2 id="adicionando-a-chave-ao-github">Adicionando a Chave ao Github</h2>
+<p>Acesse esse <a href="https://github.com/settings/keys">link</a>. No topo da tela clique em <strong>New SSH Key</strong></p>
+<p><img src="/images/2020-05-16-configurando-usuario-e-senha-no-github/create.png" alt="Create Key"></p>
+<p>No camplo Title, adicione um título que identifique o computador. No campo Key, copie e cole o conteúdo do arquivo &lt;NOME_DA_CHAVE&gt;.pub.</p>
+<p><img src="/images/2020-05-16-configurando-usuario-e-senha-no-github/ssh-key.png" alt="Add Key"></p>
+<p>Depois é só clicar em <strong>Add SSH key</strong>.</p>
+<h2 id="mudando-a-url-do-repositório">Mudando a URL do Repositório</h2>
+<p>Quando fazemos um clone do repositório a opção padrão do github é um link <em>HTTPS</em>. Para podermos usar a chave SSH automaticamente devemos alterar a url para <em>SSH</em>. Você pode conferir a URL com</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git remote -v
+</code></pre></div><p>Para alterar  a URL, devemos ir na página do repositório, clicar em <strong>Clone or dowload</strong> e em <strong>Use SSH</strong>. Após copiar o link SSH, usar o comando:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git remote set-url origin &lt;URL&gt;
+</code></pre></div><p>Substituindo pela URL copiada.</p>
+<p>E pronto! Agora salvamos alguns cliques digitando email e senha toda vez que precisamos dar um push.</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/git">Git</a></li>
+							
+							<li><a href="/tags/github">Github</a></li>
+							
+							<li><a href="/tags/programa%C3%A7%C3%A3o">Programação</a></li>
+							
+							<li><a href="/tags/tutorial">Tutorial</a></li>
+							
+						</ul>
+					
+				
+			</div></div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2020  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+<script>feather.replace()</script>
+</body>
+</html>

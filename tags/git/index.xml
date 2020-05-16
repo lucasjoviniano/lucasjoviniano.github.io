@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lucas Joviniano</title>
-    <link>https://lucasjoviniano.github.io/</link>
-    <description>Recent content on Lucas Joviniano</description>
+    <title>Git on Lucas Joviniano</title>
+    <link>https://lucasjoviniano.github.io/tags/git/</link>
+    <description>Recent content in Git on Lucas Joviniano</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 16 May 2020 00:00:00 +0300</lastBuildDate>
     
-	<atom:link href="https://lucasjoviniano.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://lucasjoviniano.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,15 +20,6 @@
       <description>Toda vez que fazemos um push num repositório pro Github precisamos informar o email e a senha. Com o tempo, isso se torna um trabalho tedioso e, como bons programadores que somos, seria uma boa automatizar esse processo. Sendo assim, vou ensinar como configurar chaves SSH para fazer a autenticação.
 Criando a Chave SSH O primeiro passo é criar a chave SSH localmente. No terminal, utilize o comando
 ssh-keygen -t rsa -b 4096 -C &amp;#34;email_do_github&amp;#34; Substituindo o email_do_github pelo endereço de email da sua conta.</description>
-    </item>
-    
-    <item>
-      <title>O Perigo do Monopólio da Disney</title>
-      <link>https://lucasjoviniano.github.io/posts/2019-07-29-o-perigo-do-monopolio-da-disney/</link>
-      <pubDate>Mon, 29 Jul 2019 00:00:00 +0300</pubDate>
-      
-      <guid>https://lucasjoviniano.github.io/posts/2019-07-29-o-perigo-do-monopolio-da-disney/</guid>
-      <description>Você consegue citar todos os filmes da Disney desse ano? Tem uma grande chance de que a resposta seja sim, e que você provavelmente tenha visto todos eles. A gigante do entretenimento hoje domina as bilheterias dos cinemas com suas franquias de sucesso. Seu maior sucesso até então, Avengers: Endgame, que recentemente destronou Avatar (franquia que atualmente também pertence à empresa) do posto de filme com maior bilheteria da história, chegou a ocupar todas as salas de diversos cinemas pelo Brasil, minando assim o espaço já pequeno de outras produções - inclusive nacionais.</description>
     </item>
     
   </channel>
