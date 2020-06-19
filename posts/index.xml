@@ -6,20 +6,19 @@
     <description>Recent content in Posts on Lucas Joviniano</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 May 2020 00:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2020 12:00:00 +0300</lastBuildDate>
     
 	<atom:link href="https://lucasjoviniano.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Configurando Usuário e Senha no Git/Github</title>
-      <link>https://lucasjoviniano.github.io/posts/2020-05-16-configurando-usuario-e-senha-no-github/</link>
-      <pubDate>Sat, 16 May 2020 00:00:00 +0300</pubDate>
+      <title>Análise de Dados e RuPaul&#39;s Drag Race</title>
+      <link>https://lucasjoviniano.github.io/posts/analise-de-dados-e-rupaul/</link>
+      <pubDate>Fri, 19 Jun 2020 12:00:00 +0300</pubDate>
       
-      <guid>https://lucasjoviniano.github.io/posts/2020-05-16-configurando-usuario-e-senha-no-github/</guid>
-      <description>Toda vez que fazemos um push num repositório pro Github precisamos informar o email e a senha. Com o tempo, isso se torna um trabalho tedioso e, como bons programadores que somos, seria uma boa automatizar esse processo. Sendo assim, vou ensinar como configurar chaves SSH para fazer a autenticação.
-Criando a Chave SSH O primeiro passo é criar a chave SSH localmente. No terminal, utilize o comando
-ssh-keygen -t rsa -b 4096 -C &amp;#34;email_do_github&amp;#34; Substituindo o email_do_github pelo endereço de email da sua conta.</description>
+      <guid>https://lucasjoviniano.github.io/posts/analise-de-dados-e-rupaul/</guid>
+      <description>Uuuuh girl! Estamos naquela época do ano muito conhecida pelos fãs de Drag Race: quando a RuPaul lança uma temporada atrás da outra pra alimentar os fãs sedentos. Já tivemos a 12ª temporada, o RuPaul&amp;rsquo;s Secret Celebrity Drag Race, estamos tendo o All Stars 5 e já tem Drag Race Canada confirmada para julho!
+O show conquistou muitos espectadores durante suas 12 temporadas regulares, rendendo assim diversos spin-offs. Mas as temporadas regulares ainda são o show principal.</description>
     </item>
     
     <item>
