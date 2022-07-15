@@ -1,0 +1,486 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    
+    
+
+    
+    
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+    
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+
+    
+    
+<title>
+    
+    Análise de Dados e RuPaul&#x27;s Drag Race &middot; Lucas Joviniano
+    
+</title>
+
+
+
+    
+  <!-- CSS -->
+  <link rel="stylesheet" href="https:&#x2F;&#x2F;lucasjoviniano.github.io/main.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+
+    
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https:&#x2F;&#x2F;lucasjoviniano.github.io/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="https:&#x2F;&#x2F;lucasjoviniano.github.io/favicon.ico">
+
+
+    
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+
+    
+  
+  <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_SVG"> </script>
+  <script type="text/x-mathjax-config">
+MathJax.Hub.Config({ tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ], processEscapes: true } });
+  </script>
+  
+
+  </head>
+
+  <body>
+
+    
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+        styles, `#sidebar-checkbox` for behavior. -->
+    <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+    <!-- Toggleable sidebar -->
+    <div class="sidebar" id="sidebar">
+      
+  <div class="sidebar-item">
+    <div class="sidebar-personal-info">
+      <div class="sidebar-personal-info-section">
+        <a href="http://gravatar.com/217eb15e72a63d3a152a09cfca709bb2">
+          <img src="http://www.gravatar.com/avatar/217eb15e72a63d3a152a09cfca709bb2?s=350" title="View on Gravatar" alt="View on Gravatar" />
+        </a>
+      </div>
+      <div class="sidebar-personal-info-section">
+        <p>Um <span class="codinfox-changing-keywords"><b class="visible">desenvolvedor</b><b class="hidden">pesquisador</b></span>curioso e inspirado.</p>
+      </div>
+      
+      
+      
+      <div class="sidebar-personal-info-section">
+        <p> Follow me: <br />
+        
+        
+        
+        <a href="https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;lucasjoviniano&#x2F;">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        
+        |
+        
+        
+        
+        <a href="https:&#x2F;&#x2F;github.com&#x2F;lucasjoviniano">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+        
+        |
+        
+        
+        
+        <a href="https:&#x2F;&#x2F;www.instagram.com&#x2F;lucas.joviniano&#x2F;">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        
+        |
+        
+        
+        
+        <a href="https:&#x2F;&#x2F;www.last.fm&#x2F;pt&#x2F;user&#x2F;lucasjoviniano">
+          <i class="fa fa-lastfm" aria-hidden="true"></i>
+        </a>
+        
+        |
+        
+        
+        
+        <a href="https:&#x2F;&#x2F;letterboxd.com&#x2F;lucasjoviniano&#x2F;">
+          <i class="fa fa-film" aria-hidden="true"></i>
+        </a>
+        
+        |
+        
+        
+        
+        
+        
+        <a href="mailto:lucasjoviniano1@gmail.com">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </a>
+        
+        |
+        
+        </p>
+      </div>
+      
+    </div>
+  </div>
+ 
+
+      
+   
+  <nav class="sidebar-nav">
+    
+      
+      
+      
+        
+      
+
+      <span class="">
+        <a class="sidebar-nav-item " href="https:&#x2F;&#x2F;lucasjoviniano.github.io&#x2F;">
+          Home
+        </a>
+
+        
+      </span>
+
+    
+      
+      
+      
+        
+      
+
+      <span class="foldable">
+        <a class="sidebar-nav-item " href="https:&#x2F;&#x2F;lucasjoviniano.github.io&#x2F;blog&#x2F;">
+          Blog
+        </a>
+
+        
+          
+          
+            
+              
+              
+              
+                
+              
+              <a class="sidebar-nav-item sidebar-nav-item-sub " href="https:&#x2F;&#x2F;lucasjoviniano.github.io&#x2F;categories&#x2F;">
+                Categories
+              </a>
+            
+              
+              
+              
+                
+              
+              <a class="sidebar-nav-item sidebar-nav-item-sub " href="https:&#x2F;&#x2F;lucasjoviniano.github.io&#x2F;tags&#x2F;">
+                Tags
+              </a>
+            
+          
+        
+      </span>
+
+    
+
+    <span class="sidebar-nav-item">Currently v0.0.1</span>
+  </nav>
+
+
+
+      
+  <div class="sidebar-item">
+    <p>
+    &copy; 2022 Lucas Joviniano. This work is liscensed under <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
+    </p>
+  </div>
+
+
+      
+  <div class="sidebar-item">
+    <p>
+        Powered by <a href="https://www.getzola.org">Zola</a> and <a href="https://github.com/svavs/codinfox-zola">Codinfox-Zola</a>
+    </p>
+  </div>
+ 
+
+      
+	<script>
+	(function(){
+	document.addEventListener('DOMContentLoaded', function(){
+	    var children = document.getElementsByClassName('codinfox-changing-keywords')[0].children;
+	    var length = children.length;
+	    var idx = 0;
+	    setInterval(function(){
+		children[idx].className = "hidden";
+		idx = (idx + 1) % length;
+		children[idx].className = "visible";
+	    }, 2000);
+	});
+	})();
+	</script>
+
+    </div>
+    
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+
+      
+
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="https:&#x2F;&#x2F;lucasjoviniano.github.io/" title="Home" title="Lucas Joviniano">
+              <img class="masthead-logo" src="https:&#x2F;&#x2F;lucasjoviniano.github.io&#x2F;logo.png"/>
+            </a>
+            <small>Código. Livros. Linguagens.</small>
+            
+          </h3>
+        </div>
+      </div>
+
+
+
+      <div class="container content">
+
+        
+	      <div class="post">
+          <h1 class="post-title">Análise de Dados e RuPaul&#x27;s Drag Race</h1>
+          <span class="post-date">2020-06-19</span>
+           |
+            
+            <a href="https://lucasjoviniano.github.io/tags/tv/" class="post-tag">TV</a>
+            
+            <a href="https://lucasjoviniano.github.io/tags/reality/" class="post-tag">Reality</a>
+            
+            <a href="https://lucasjoviniano.github.io/tags/lgbt/" class="post-tag">LGBT</a>
+            
+            <a href="https://lucasjoviniano.github.io/tags/python/" class="post-tag">Python</a>
+            
+            <a href="https://lucasjoviniano.github.io/tags/pandas/" class="post-tag">Pandas</a>
+            
+            <a href="https://lucasjoviniano.github.io/tags/rupaul/" class="post-tag">RuPaul</a>
+            
+            <a href="https://lucasjoviniano.github.io/tags/drag-race/" class="post-tag">Drag Race</a>
+            
+          
+          <article>
+            <p><img src="https://media.giphy.com/media/W1SYNTF2HmihUGnOWX/giphy.gif" alt="RuPaul falando &quot;Hello, Hello, Hello&quot;" /></p>
+<p>Uuuuh girl! Estamos naquela época do ano muito conhecida pelos fãs de Drag Race: quando a RuPaul lança uma temporada atrás da outra pra alimentar os fãs sedentos. Já tivemos a 12ª temporada, o RuPaul's Secret Celebrity Drag Race, estamos tendo o All Stars 5 e já tem Drag Race Canada confirmada para julho!</p>
+<p>O show conquistou muitos espectadores durante suas 12 temporadas regulares, rendendo assim diversos spin-offs. Mas as temporadas regulares ainda são o show principal. Com essa legião de pessoas assistindo, e ainda por ser um show de competição, as pessoas costumam comparar com frequência as temporadas para determinar qual é a melhor. Se você já acompanhou alguma dessas discussões, já deve ter visto o quanto são acaloradas.</p>
+<p>Tendo isso em mente, me veio a seguinte pergunta: É possível determinar qual é a melhor temporada de RuPaul's Drag Race usando análise de dados? Bem, teoricamente sim. Eu só precisaria de uma base de dados para trabalhar e uma métrica para definir o que é melhor. Assim, resolvi tentar responder essa pergunta. <strong>So, start your engines, and may the best season... win!</strong></p>
+<p><img src="https://media.giphy.com/media/xUOwGfqVY7J3fQpi3C/giphy.gif" alt="RuPaul levantando a mão" /></p>
+<p>Para isso, escolhi a base de dados do <a href="https://www.imdb.com/">IMDB</a>. E a métrica, óbviamente, será as notas dadas pelos usuários da plataforma. E na parte tech? Bem, escolhi python por um simples motivo: a biblioteca imdbpy. Ela nos permite acessar facilmente os dados do IMDb. Na parte da visualização, usaremos matplotlib com seaborn, além de pandas para manipular os dados. Então, vamos ao código!</p>
+<h1 id="carregando-os-dados">Carregando os Dados</h1>
+<p>Primeiro, importamos as biblotecas e defiimos algumas configurações básicas para a visualização dos gráficos.</p>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#b48ead;">from </span><span>imdb </span><span style="color:#b48ead;">import </span><span>IMDb</span><span>
+</span><span style="color:#b48ead;">import </span><span>pandas </span><span style="color:#b48ead;">as </span><span>pd</span><span>
+</span><span style="color:#b48ead;">import </span><span>matplotlib.pyplot </span><span style="color:#b48ead;">as </span><span>plt</span><span>
+</span><span>
+</span><span style="color:#b48ead;">import </span><span>seaborn </span><span style="color:#b48ead;">as </span><span>sns</span><span>
+</span><span>%matplotlib inline</span><span>
+</span><span>
+</span><span>sns.</span><span style="color:#bf616a;">set</span><span>()</span><span>
+</span><span>sns.</span><span style="color:#bf616a;">set_style</span><span>(&quot;</span><span style="color:#a3be8c;">white</span><span>&quot;)</span><span>
+</span><span>sns.</span><span style="color:#bf616a;">set_context</span><span>(&quot;</span><span style="color:#a3be8c;">notebook</span><span>&quot;, </span><span style="color:#bf616a;">font_scale</span><span>=</span><span style="color:#d08770;">1.5</span><span>)</span><span>
+</span><span>
+</span><span>bar_color = &#39;</span><span style="color:#a3be8c;">#E5989B</span><span>&#39;</span><span>
+</span><span>top_bar_text_color = &#39;</span><span style="color:#a3be8c;">#6D6875</span><span>&#39;</span><span>
+</span></code></pre>
+<p>Após isso, precisamos pegar os dados do IMDb. Aqui, pegamos os dados básicos que a biblioteca trás para a gente, e depois atualizamos com algumas informações extras.</p>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span>ia = </span><span style="color:#bf616a;">IMDb</span><span>()</span><span>
+</span><span>rp = ia.</span><span style="color:#bf616a;">get_movie</span><span>(&#39;</span><span style="color:#a3be8c;">1353056</span><span>&#39;)</span><span>
+</span><span>ia.</span><span style="color:#bf616a;">update</span><span>(rp, [&#39;</span><span style="color:#a3be8c;">episodes</span><span>&#39;, &#39;</span><span style="color:#a3be8c;">vote details</span><span>&#39;])</span><span>
+</span></code></pre>
+<p>Com isso, temos todas as infomações que precisamos. Porém, temos também várias informações que não precisamos. Para facilitar o trabalho de análise, vamos estruturar os dados de outra forma usando um DataFrame do pandas.</p>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span style="color:#65737e;"># Variáveis auxiliares</span><span style="color:#65737e;">
+</span><span>season = []</span><span>
+</span><span>title = []</span><span>
+</span><span>rating = []</span><span>
+</span><span>ep = []</span><span>
+</span><span>votes = []</span><span>
+</span><span>
+</span><span style="color:#b48ead;">for </span><span>s </span><span style="color:#b48ead;">in </span><span>rp[&#39;</span><span style="color:#a3be8c;">episodes</span><span>&#39;]:</span><span>
+</span><span>    </span><span style="color:#b48ead;">for </span><span>i, e </span><span style="color:#b48ead;">in </span><span>rp[&#39;</span><span style="color:#a3be8c;">episodes</span><span>&#39;][s].</span><span style="color:#bf616a;">items</span><span>():</span><span>
+</span><span>        season.</span><span style="color:#bf616a;">append</span><span>(s)</span><span>
+</span><span>        title.</span><span style="color:#bf616a;">append</span><span>(e[&#39;</span><span style="color:#a3be8c;">title</span><span>&#39;])</span><span>
+</span><span>        rating.</span><span style="color:#bf616a;">append</span><span>(e[&#39;</span><span style="color:#a3be8c;">rating</span><span>&#39;])</span><span>
+</span><span>        votes.</span><span style="color:#bf616a;">append</span><span>(e[&#39;</span><span style="color:#a3be8c;">votes</span><span>&#39;])</span><span>
+</span><span>        ep.</span><span style="color:#bf616a;">append</span><span>(i)</span><span>
+</span><span>
+</span><span>df = pd.</span><span style="color:#bf616a;">DataFrame</span><span>(</span><span style="color:#bf616a;">list</span><span>(</span><span style="color:#96b5b4;">zip</span><span>(title, season, ep, rating, votes)), </span><span style="color:#bf616a;">columns </span><span>= [&#39;</span><span style="color:#a3be8c;">Title</span><span>&#39;, &#39;</span><span style="color:#a3be8c;">Season</span><span>&#39;, &#39;</span><span style="color:#a3be8c;">Episode</span><span>&#39;, &#39;</span><span style="color:#a3be8c;">Rating</span><span>&#39;, &#39;</span><span style="color:#a3be8c;">Votes</span><span>&#39;])</span><span>
+</span><span>df.</span><span style="color:#bf616a;">head</span><span>(</span><span style="color:#d08770;">10</span><span>)</span><span>
+</span></code></pre>
+<p>No código acima, pegamos somente as informações: Título do Eṕisódio, sua respectiva temporada, seu número, sua nota e quantidade de pessoas que avaliaram. Essas informações são mais do que suficientes para o que queremos. Aqui está uma amostra de como os dados estão armazenados.</p>
+<p><img src="https://i.imgur.com/hGRQs21.png" alt="Primeiros 10 episódios salvos" /></p>
+<h1 id="analisando-os-dados">Analisando os Dados</h1>
+<p>Com isso, podemos começar as visualizações! Mas primero, vamos definir quais perguntas eu quero responder:</p>
+<ol>
+<li>Qual é o melhor episódio de cada temporada?</li>
+<li>Qual o melhor Snatch Game?</li>
+<li>Qual a temporada mais bem avaliada?</li>
+</ol>
+<p>Com as perguntas definidas, vamos começar a respondê - las.</p>
+<h2 id="1-qual-o-melhor-episodio-de-cada-temporada">1 - Qual o melhor episódio de cada temporada?</h2>
+<p>Conseguir essa informação é simples, só precisamos pedir para o pandas nos retornar a linha com o maior valor na coluna Rating. A primeira linha do código abaixo cuida disso, enquanto as próximas cuidam da visualização.</p>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span>best_eps = df.iloc[df.</span><span style="color:#bf616a;">groupby</span><span>(&#39;</span><span style="color:#a3be8c;">Season</span><span>&#39;)[&#39;</span><span style="color:#a3be8c;">Rating</span><span>&#39;].</span><span style="color:#bf616a;">idxmax</span><span>()]</span><span>
+</span><span>
+</span><span>fig, ax = plt.</span><span style="color:#bf616a;">subplots</span><span>(</span><span style="color:#bf616a;">figsize</span><span>=(</span><span style="color:#d08770;">12</span><span>, </span><span style="color:#d08770;">6</span><span>))</span><span>
+</span><span>rects = ax.</span><span style="color:#bf616a;">bar</span><span>(best_eps.Season, best_eps[&#39;</span><span style="color:#a3be8c;">Rating</span><span>&#39;], </span><span style="color:#bf616a;">color</span><span>= bar_color)</span><span>
+</span><span style="color:#b48ead;">for </span><span>i </span><span style="color:#b48ead;">in </span><span style="color:#96b5b4;">range</span><span>(</span><span style="color:#96b5b4;">len</span><span>(rects)):</span><span>
+</span><span>        height = rects[i].</span><span style="color:#bf616a;">get_height</span><span>()</span><span>
+</span><span>        ax.</span><span style="color:#bf616a;">text</span><span>(rects[i].</span><span style="color:#bf616a;">get_x</span><span>() + rects[i].</span><span style="color:#bf616a;">get_width</span><span>()/</span><span style="color:#d08770;">2</span><span>, </span><span style="color:#d08770;">0.5</span><span>,</span><span>
+</span><span>                </span><span style="color:#bf616a;">str</span><span>(best_eps.iloc[i, : ][&#39;</span><span style="color:#a3be8c;">Episode</span><span>&#39;]) + &#39;</span><span style="color:#a3be8c;"> - </span><span>&#39; + best_eps.iloc[i, : ][&#39;</span><span style="color:#a3be8c;">Title</span><span>&#39;],</span><span>
+</span><span>                </span><span style="color:#bf616a;">ha</span><span>=&#39;</span><span style="color:#a3be8c;">center</span><span>&#39;, </span><span style="color:#bf616a;">va</span><span>=&#39;</span><span style="color:#a3be8c;">bottom</span><span>&#39;, </span><span style="color:#bf616a;">rotation </span><span>= </span><span style="color:#d08770;">90</span><span>, </span><span style="color:#bf616a;">color</span><span>=&#39;</span><span style="color:#a3be8c;">#FFFFFC</span><span>&#39;)</span><span>
+</span><span>
+</span><span>ax.</span><span style="color:#bf616a;">set_xlabel</span><span>(&#39;</span><span style="color:#a3be8c;">Temporada</span><span>&#39;)</span><span>
+</span><span>ax.</span><span style="color:#bf616a;">set_xticks</span><span>(best_eps.Season)</span><span>
+</span><span>sns.</span><span style="color:#bf616a;">despine</span><span>()</span><span>
+</span><span>plt.</span><span style="color:#bf616a;">show</span><span>()</span><span>
+</span></code></pre>
+<p><img src="https://i.imgur.com/8hevnmE.png" alt="Gráfico mostrando o melhor episódio por temporada" /></p>
+<p>Podemos notar que o Snatch Game é o favorito em três temporadas diferentes, mostrando assim o quanto o público gosta desse challenge. Temos também em destaque a Grande Final da Nona Temporada, que foi a primeira final no estilo Lipsync For The Crown e nos deu o tão conhecido lipsync de So Emotional por Sasha Velour e Shea Coulee.</p>
+<p><img src="https://media.giphy.com/media/3oKHWalGcgCRqvL4uQ/giphy.gif" alt="Sasha Velour revelando as pétalas embaixo de sua peruca" /></p>
+<h3 id="2-qual-o-melhor-snatch-game">2 - Qual o melhor Snatch Game?</h3>
+<p>O Snatch Game é um dos desafios mais clássicos de Drag Race. Ele aparece em todas as temporadas, com exceção da primeira, e é muito amado pelos fãs. Usando o último gráfico já podemos ver qual o melhor, mas vamos ver a comparação entre todos. Aqui estamos filtrando somente as linhas em que o título do episódio contenha as palavras <em>Snatch Game</em>.</p>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span>pe = df[df.Title.str.</span><span style="color:#bf616a;">contains</span><span>(&#39;</span><span style="color:#a3be8c;">Snatch Game</span><span>&#39;)]</span><span>
+</span><span>fig, ax = plt.</span><span style="color:#bf616a;">subplots</span><span>(</span><span style="color:#bf616a;">figsize</span><span>=(</span><span style="color:#d08770;">12</span><span>, </span><span style="color:#d08770;">6</span><span>))</span><span>
+</span><span>
+</span><span>rects = ax.</span><span style="color:#bf616a;">bar</span><span>(pe.Season, pe[&#39;</span><span style="color:#a3be8c;">Rating</span><span>&#39;], </span><span style="color:#bf616a;">color</span><span>= bar_color)</span><span>
+</span><span style="color:#b48ead;">for </span><span>rect </span><span style="color:#b48ead;">in </span><span>rects:</span><span>
+</span><span>        height = rect.</span><span style="color:#bf616a;">get_height</span><span>()</span><span>
+</span><span>        ax.</span><span style="color:#bf616a;">text</span><span>(rect.</span><span style="color:#bf616a;">get_x</span><span>() + rect.</span><span style="color:#bf616a;">get_width</span><span>()/</span><span style="color:#d08770;">2.</span><span>, </span><span style="color:#d08770;">1.05</span><span>*height,</span><span>
+</span><span>                &#39;</span><span style="color:#d08770;">%.1f</span><span>&#39; % </span><span style="color:#bf616a;">float</span><span>(height),</span><span>
+</span><span>                </span><span style="color:#bf616a;">ha</span><span>=&#39;</span><span style="color:#a3be8c;">center</span><span>&#39;, </span><span style="color:#bf616a;">va</span><span>=&#39;</span><span style="color:#a3be8c;">bottom</span><span>&#39;, </span><span style="color:#bf616a;">color </span><span>= top_bar_text_color)</span><span>
+</span><span>
+</span><span>ax.</span><span style="color:#bf616a;">set_xlabel</span><span>(&#39;</span><span style="color:#a3be8c;">Temporada</span><span>&#39;)</span><span>
+</span><span>ax.</span><span style="color:#bf616a;">set_xticks</span><span>(pe.Season)</span><span>
+</span><span>sns.</span><span style="color:#bf616a;">despine</span><span>()</span><span>
+</span><span>plt.</span><span style="color:#bf616a;">show</span><span>()</span><span>
+</span></code></pre>
+<p><img src="https://i.imgur.com/F3Uw9zB.png" alt="Nota de todos os Snatch Games" /></p>
+<p>Como já sabiamos, <strong>o melhor Snatch Game</strong> foi o da Sexta Temporada! Realmente tivemos ótimas performances nesse ano: Bianca Del Rio como Judge Judy (uma das personagens favoritas da RuPaul), Adore Delano como Anna Nicole Smith e, a vencedora do desafio, BenDeLaCreme como Maggie Smith.</p>
+<p><img src="https://media.giphy.com/media/3oriNOpTC2NHEDpTWM/giphy.gif" alt="BenDeLaCreme interpretando Maggie Smith" /></p>
+<p>Em <strong>segundo lugar</strong> temos a Quarta Temporada! A ganhadora desse episódio foi a Chad Michaels, interpretando, obviamete, a Cher!</p>
+<p><img src="https://media.giphy.com/media/JFsnpzgST6vao/giphy.gif" alt="Chad Michaels como Cher" /></p>
+<h3 id="3-qual-a-temporada-mais-bem-avaliada">3 - Qual a temporada mais bem avaliada?</h3>
+<p>Chegamos a pergunta final: Qual a melhor temporada?? Aqui, eu usarei a mediana das notas dos episódios para calcular a nota da temporada. Mas porque a mediana? E porque não a média? Bem, a média nos daria um valor que é afetado por episódios muito ruins ou episódios muito bons. Isso quer dizer que uma temporada média com um episódio muito bom poderia ser considerada boa, mas um episódio compensa por toda uma temporada mediana? Bem, eu acho que não, então usarei a mediana para eliminar essa sensibilidade dos resultados.</p>
+<pre data-lang="python" style="background-color:#2b303b;color:#c0c5ce;" class="language-python "><code class="language-python" data-lang="python"><span>ps = df.</span><span style="color:#bf616a;">groupby</span><span>([&#39;</span><span style="color:#a3be8c;">Season</span><span>&#39;]).</span><span style="color:#bf616a;">median</span><span>()</span><span>
+</span><span>
+</span><span>fig, ax = plt.</span><span style="color:#bf616a;">subplots</span><span>(</span><span style="color:#bf616a;">figsize</span><span>=(</span><span style="color:#d08770;">12</span><span>, </span><span style="color:#d08770;">6</span><span>))</span><span>
+</span><span>
+</span><span>rects = ax.</span><span style="color:#bf616a;">bar</span><span>(ps.index, ps[&#39;</span><span style="color:#a3be8c;">Rating</span><span>&#39;], </span><span style="color:#bf616a;">color</span><span>= bar_color)</span><span>
+</span><span style="color:#b48ead;">for </span><span>rect </span><span style="color:#b48ead;">in </span><span>rects:</span><span>
+</span><span>        height = rect.</span><span style="color:#bf616a;">get_height</span><span>()</span><span>
+</span><span>        ax.</span><span style="color:#bf616a;">text</span><span>(rect.</span><span style="color:#bf616a;">get_x</span><span>() + rect.</span><span style="color:#bf616a;">get_width</span><span>()/</span><span style="color:#d08770;">2.</span><span>, </span><span style="color:#d08770;">1.05</span><span>*height,</span><span>
+</span><span>                &#39;</span><span style="color:#d08770;">%.1f</span><span>&#39; % </span><span style="color:#bf616a;">float</span><span>(height),</span><span>
+</span><span>                </span><span style="color:#bf616a;">ha</span><span>=&#39;</span><span style="color:#a3be8c;">center</span><span>&#39;, </span><span style="color:#bf616a;">va</span><span>=&#39;</span><span style="color:#a3be8c;">bottom</span><span>&#39;, </span><span style="color:#bf616a;">color </span><span>= top_bar_text_color)</span><span>
+</span><span>
+</span><span>ax.</span><span style="color:#bf616a;">set_xlabel</span><span>(&#39;</span><span style="color:#a3be8c;">Temporada</span><span>&#39;)</span><span>
+</span><span>ax.</span><span style="color:#bf616a;">set_xticks</span><span>(ps.index)</span><span>
+</span><span>ax.</span><span style="color:#bf616a;">get_yaxis</span><span>().</span><span style="color:#bf616a;">set_visible</span><span>(</span><span style="color:#d08770;">False</span><span>)</span><span>
+</span><span>sns.</span><span style="color:#bf616a;">despine</span><span>()</span><span>
+</span><span>plt.</span><span style="color:#bf616a;">show</span><span>()</span><span>
+</span></code></pre>
+<p><img src="https://i.imgur.com/aVEwhUk.png" alt="Nota de cada temporada" /></p>
+<p>Então, temos que a melhor temporada, definida pelo público, é a <strong>Sexta Temporada!</strong> Ela inclusive já havia figurado como Melhor Snatch Game (que é também considerado o melhor episódio entre todas as temporadas). Em segundo e terceiro lugar temos a <strong>quinta e a quarta</strong> temporada, respectivamente.</p>
+<p><img src="https://www.out.com/sites/out.com/files/2013/12/10/rpdr6slide1.jpg" alt="Cast da sexta temporada" /></p>
+<p><strong>&quot;Mas eu não concordo com esse resultado!!&quot;</strong>. Bem, acontece. Mas é importante lembrar que isso vem da base de dados do IMDb, portanto só reflete a opinião dos usuários de lá. Pode ser que a maioria das pessoas não concorde com o resultado, e tá tudo bem! O importante mesmo é ter um show de grande representatividade como esse na TV e não importa quem os usuários do IMDb pensam que é melhor, com quem você se identifica ainda é a opinião mais importante.</p>
+<p><img src="https://media.giphy.com/media/gkXcg0fmfy4V97fSdh/giphy.gif" alt="Rupaul falando &quot;Everybody Say Love!&quot;" /></p>
+<p>Com isso, concluímos a Análise de Dados com RuPaul's Drag Race. Claro, eu pdoeria fazer muito mais que isso, como analisar os All Stars e definir outras perguntas, mas acho que já foi conteúdo o suficiente. O código desse post pode ser encontrado <a href="https://github.com/lucasjoviniano/rpdr-eda/blob/master/Rupaul.ipynb">aqui</a>. No mais, obrigado e até a próxima!</p>
+
+          </article>
+        </div>
+
+        <div class="related">
+          <h2>Other Posts</h2>
+          <ul class="related-posts">
+            <li class="previous">
+            
+            </li>
+            <li class="next">
+            
+                <small>{</small>
+                <a href="https:&#x2F;&#x2F;lucasjoviniano.github.io&#x2F;blog&#x2F;como-eu-faco-minhas-anotacoes-usando-o-obsidian-e-o-logseq&#x2F;">Como eu faço minhas anotações usando o Obsidian e o Logseq</a>
+                 <small>} Later</small>
+            
+            </li>
+          </ul>
+        </div>
+
+        
+        <div class="comments">
+          <h2>Comments</h2>
+          <div id="disqus_thread"></div>
+          <script>
+            var disqus_config = function () {
+            this.page.url = 'https://lucasjoviniano.github.io/blog/analise-de-dados-e-rupaul/'; // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = 'Análise de Dados e RuPaul&#x27;s Drag Race'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://codinfox-zola.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </div>
+        
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if (target === toggle) {
+            checkbox.checked = !checkbox.checked;
+            e.preventDefault();
+          } else if (checkbox.checked && !sidebar.contains(target)) {
+            /* click outside the sidebar when sidebar is open */
+            checkbox.checked = false;
+          }
+        }, false);
+      })(document);
+    </script>
+
+
+
+  </body>
+
+  
+  
+  <script id="dsq-count-scr" src="//codinfox-zola.disqus.com/count.js" async></script>
+  
+
+
+</html>

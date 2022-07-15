@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>Lucas Joviniano</title>
+	<subtitle>Código. Livros. Linguagens.</subtitle>
+	<link href="https://lucasjoviniano.github.io/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://lucasjoviniano.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-09-04T00:00:00+00:00</updated>
+	<id>https://lucasjoviniano.github.io/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Como eu faço minhas anotações usando o Obsidian e o Logseq</title>
+		<published>2021-09-04T00:00:00+00:00</published>
+		<updated>2021-09-04T00:00:00+00:00</updated>
+		<link href="https://lucasjoviniano.github.io/blog/como-eu-faco-minhas-anotacoes-usando-o-obsidian-e-o-logseq/" type="text/html"/>
+		<id>https://lucasjoviniano.github.io/blog/como-eu-faco-minhas-anotacoes-usando-o-obsidian-e-o-logseq/</id>
+		<content type="html">&lt;p&gt;Nos últimos anos tentei usar diversos aplicativos de anotaçãoes, do complexo &lt;a href=&quot;https:&#x2F;&#x2F;www.notion.so&#x2F;&quot;&gt;Notion&lt;&#x2F;a&gt; ao simples &lt;a href=&quot;https:&#x2F;&#x2F;keep.google.com&#x2F;&quot; title=&quot;Google Keep&quot;&gt;Google Keep&lt;&#x2F;a&gt;, e sempre senti que faltava algo. Basicamente, organizar minhas anotações tem alguns requisitos mínimos:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Não usar Nuvem (a não ser para sincronização)&lt;&#x2F;li&gt;
+&lt;li&gt;Fácil de dar CTRL + C e CTRL + V&lt;&#x2F;li&gt;
+&lt;li&gt;Boa Interface&lt;&#x2F;li&gt;
+&lt;li&gt;Posso abrir as notas em qualquer programa (por serem arquivos locais)&lt;&#x2F;li&gt;
+&lt;li&gt;Controle de Versão&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Considerando isso, recentemente conheci duas ferramentas: O &lt;a href=&quot;https:&#x2F;&#x2F;obsidian.md&#x2F;&quot; title=&quot;Obsidian&quot;&gt;Obsidian&lt;&#x2F;a&gt; e o &lt;a href=&quot;https:&#x2F;&#x2F;logseq.com&#x2F;&quot; title=&quot;Logseq&quot;&gt;Logseq&lt;&#x2F;a&gt;, e eles são basicamente tudo o que eu precisava. Os dois apps têm a mesma ideia: organizar as anotações num esquema de &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Zettelkasten&quot;&gt;Zettelkasten&lt;&#x2F;a&gt;. Então por que usar os dois? &lt;&#x2F;p&gt;
+&lt;p&gt;Bem, são estilos um pouco diferentes. Gosto de Logseq como um caderno de rascunhos, onde faço notas rápidas e &amp;quot;bagunçadas&amp;quot;. Depois, uso isso no Obsidian para organizar e consolidar essas notas, transformado - as em &lt;a href=&quot;https:&#x2F;&#x2F;notes.andymatuschak.org&#x2F;Evergreen_notes&quot;&gt;evergreen notes&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Então vou explicar como configuro os dois programas para trabalharem juntos da melhor forma que encontrei (até agora). Não vou entrar em muitos detalhes de como funcionam os programas, vou apenas assumir que quem está lendo já usou e entende o básico de como funciona cada um.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;configurando-o-obsidian&quot;&gt;Configurando o Obsidian&lt;&#x2F;h2&gt;
+&lt;p&gt;Abrindo as configurações do Obsidian, sigam os passos abaixo.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;mudando-a-pasta-de-novas-paginas&quot;&gt;Mudando a pasta de novas páginas&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Files and Links
+&lt;ul&gt;
+&lt;li&gt;Default Location For New Notes: In the folder specified below
+&lt;ul&gt;
+&lt;li&gt;pages&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;mudando-o-local-de-anexos-imagens-etc&quot;&gt;Mudando o Local de Anexos (Imagens, etc.)&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Files and Links
+&lt;ul&gt;
+&lt;li&gt;Default Location For New Attachments: In the folder specified below
+&lt;ul&gt;
+&lt;li&gt;assets&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;New Link Format: Relative Path to File&lt;&#x2F;li&gt;
+&lt;li&gt;Use Wikilinks: Off&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;anotacoes-diarias&quot;&gt;Anotações Diárias&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Core Plugins
+&lt;ul&gt;
+&lt;li&gt;Daily Notes: On&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Daily Notes
+&lt;ul&gt;
+&lt;li&gt;Date Format: YYYY_MM_DD&lt;&#x2F;li&gt;
+&lt;li&gt;New File Location: journals&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;configurando-o-logseq&quot;&gt;Configurando o Logseq&lt;&#x2F;h2&gt;
+&lt;p&gt;Com o Logseq aberto na pasta das anotações, clique nos &amp;quot;...&amp;quot; na parte superior &amp;gt; Settings &amp;gt; Edit config.edn for current repo (Ao lado de Current Graph)&lt;&#x2F;p&gt;
+&lt;p&gt;No config.edn, adicione as seguintes linhas&lt;&#x2F;p&gt;
+&lt;p&gt;:journal&#x2F;file-name-format &amp;quot;yyy-MM-dd&amp;quot;
+:page-name-order &amp;quot;file&amp;quot;&lt;&#x2F;p&gt;
+&lt;p&gt;E pronto! Todo o setup está conigurado. Agora você pode aproveitar o maravilhoso mundo dos arquivos MD e Zettelkasten.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Análise de Dados e RuPaul&#x27;s Drag Race</title>
+		<published>2020-06-19T00:00:00+00:00</published>
+		<updated>2020-06-19T00:00:00+00:00</updated>
+		<link href="https://lucasjoviniano.github.io/blog/analise-de-dados-e-rupaul/" type="text/html"/>
+		<id>https://lucasjoviniano.github.io/blog/analise-de-dados-e-rupaul/</id>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;media.giphy.com&#x2F;media&#x2F;W1SYNTF2HmihUGnOWX&#x2F;giphy.gif&quot; alt=&quot;RuPaul falando &amp;quot;Hello, Hello, Hello&amp;quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Uuuuh girl! Estamos naquela época do ano muito conhecida pelos fãs de Drag Race: quando a RuPaul lança uma temporada atrás da outra pra alimentar os fãs sedentos. Já tivemos a 12ª temporada, o RuPaul&#x27;s Secret Celebrity Drag Race, estamos tendo o All Stars 5 e já tem Drag Race Canada confirmada para julho!&lt;&#x2F;p&gt;
+&lt;p&gt;O show conquistou muitos espectadores durante suas 12 temporadas regulares, rendendo assim diversos spin-offs. Mas as temporadas regulares ainda são o show principal. Com essa legião de pessoas assistindo, e ainda por ser um show de competição, as pessoas costumam comparar com frequência as temporadas para determinar qual é a melhor. Se você já acompanhou alguma dessas discussões, já deve ter visto o quanto são acaloradas.&lt;&#x2F;p&gt;
+&lt;p&gt;Tendo isso em mente, me veio a seguinte pergunta: É possível determinar qual é a melhor temporada de RuPaul&#x27;s Drag Race usando análise de dados? Bem, teoricamente sim. Eu só precisaria de uma base de dados para trabalhar e uma métrica para definir o que é melhor. Assim, resolvi tentar responder essa pergunta. &lt;strong&gt;So, start your engines, and may the best season... win!&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;media.giphy.com&#x2F;media&#x2F;xUOwGfqVY7J3fQpi3C&#x2F;giphy.gif&quot; alt=&quot;RuPaul levantando a mão&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Para isso, escolhi a base de dados do &lt;a href=&quot;https:&#x2F;&#x2F;www.imdb.com&#x2F;&quot;&gt;IMDB&lt;&#x2F;a&gt;. E a métrica, óbviamente, será as notas dadas pelos usuários da plataforma. E na parte tech? Bem, escolhi python por um simples motivo: a biblioteca imdbpy. Ela nos permite acessar facilmente os dados do IMDb. Na parte da visualização, usaremos matplotlib com seaborn, além de pandas para manipular os dados. Então, vamos ao código!&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;carregando-os-dados&quot;&gt;Carregando os Dados&lt;&#x2F;h1&gt;
+&lt;p&gt;Primeiro, importamos as biblotecas e defiimos algumas configurações básicas para a visualização dos gráficos.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;from &lt;&#x2F;span&gt;&lt;span&gt;imdb &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;IMDb&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;pandas &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;as &lt;&#x2F;span&gt;&lt;span&gt;pd&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;matplotlib.pyplot &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;as &lt;&#x2F;span&gt;&lt;span&gt;plt&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;seaborn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;as &lt;&#x2F;span&gt;&lt;span&gt;sns&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;%matplotlib inline&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;sns.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;set&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;sns.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;set_style&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;white&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;sns.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;set_context&lt;&#x2F;span&gt;&lt;span&gt;(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;notebook&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;font_scale&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.5&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;bar_color = &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;#E5989B&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;top_bar_text_color = &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;#6D6875&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Após isso, precisamos pegar os dados do IMDb. Aqui, pegamos os dados básicos que a biblioteca trás para a gente, e depois atualizamos com algumas informações extras.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;ia = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;IMDb&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;rp = ia.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get_movie&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;1353056&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;ia.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;update&lt;&#x2F;span&gt;&lt;span&gt;(rp, [&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;episodes&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;, &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;vote details&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;])&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Com isso, temos todas as infomações que precisamos. Porém, temos também várias informações que não precisamos. Para facilitar o trabalho de análise, vamos estruturar os dados de outra forma usando um DataFrame do pandas.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;# Variáveis auxiliares&lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;season = []&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;title = []&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;rating = []&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;ep = []&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;votes = []&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;s &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;rp[&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;episodes&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;]:&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;i, e &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;rp[&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;episodes&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;][s].&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;items&lt;&#x2F;span&gt;&lt;span&gt;():&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        season.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;append&lt;&#x2F;span&gt;&lt;span&gt;(s)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        title.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;append&lt;&#x2F;span&gt;&lt;span&gt;(e[&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;title&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;])&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        rating.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;append&lt;&#x2F;span&gt;&lt;span&gt;(e[&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;rating&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;])&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        votes.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;append&lt;&#x2F;span&gt;&lt;span&gt;(e[&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;votes&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;])&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        ep.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;append&lt;&#x2F;span&gt;&lt;span&gt;(i)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;df = pd.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;DataFrame&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;list&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;zip&lt;&#x2F;span&gt;&lt;span&gt;(title, season, ep, rating, votes)), &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;columns &lt;&#x2F;span&gt;&lt;span&gt;= [&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Title&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;, &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Season&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;, &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Episode&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;, &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Rating&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;, &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Votes&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;])&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;df.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;head&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;No código acima, pegamos somente as informações: Título do Eṕisódio, sua respectiva temporada, seu número, sua nota e quantidade de pessoas que avaliaram. Essas informações são mais do que suficientes para o que queremos. Aqui está uma amostra de como os dados estão armazenados.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;hGRQs21.png&quot; alt=&quot;Primeiros 10 episódios salvos&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;analisando-os-dados&quot;&gt;Analisando os Dados&lt;&#x2F;h1&gt;
+&lt;p&gt;Com isso, podemos começar as visualizações! Mas primero, vamos definir quais perguntas eu quero responder:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Qual é o melhor episódio de cada temporada?&lt;&#x2F;li&gt;
+&lt;li&gt;Qual o melhor Snatch Game?&lt;&#x2F;li&gt;
+&lt;li&gt;Qual a temporada mais bem avaliada?&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Com as perguntas definidas, vamos começar a respondê - las.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;1-qual-o-melhor-episodio-de-cada-temporada&quot;&gt;1 - Qual o melhor episódio de cada temporada?&lt;&#x2F;h2&gt;
+&lt;p&gt;Conseguir essa informação é simples, só precisamos pedir para o pandas nos retornar a linha com o maior valor na coluna Rating. A primeira linha do código abaixo cuida disso, enquanto as próximas cuidam da visualização.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;best_eps = df.iloc[df.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;groupby&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Season&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;)[&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Rating&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;].&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;idxmax&lt;&#x2F;span&gt;&lt;span&gt;()]&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;fig, ax = plt.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;subplots&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;figsize&lt;&#x2F;span&gt;&lt;span&gt;=(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;12&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;6&lt;&#x2F;span&gt;&lt;span&gt;))&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;rects = ax.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;bar&lt;&#x2F;span&gt;&lt;span&gt;(best_eps.Season, best_eps[&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Rating&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;], &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;color&lt;&#x2F;span&gt;&lt;span&gt;= bar_color)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;i &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;range&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span&gt;(rects)):&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        height = rects[i].&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get_height&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        ax.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;text&lt;&#x2F;span&gt;&lt;span&gt;(rects[i].&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get_x&lt;&#x2F;span&gt;&lt;span&gt;() + rects[i].&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get_width&lt;&#x2F;span&gt;&lt;span&gt;()&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0.5&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;str&lt;&#x2F;span&gt;&lt;span&gt;(best_eps.iloc[i, : ][&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Episode&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;]) + &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt; - &lt;&#x2F;span&gt;&lt;span&gt;&amp;#39; + best_eps.iloc[i, : ][&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Title&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;],&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ha&lt;&#x2F;span&gt;&lt;span&gt;=&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;center&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;va&lt;&#x2F;span&gt;&lt;span&gt;=&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;bottom&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;rotation &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;90&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;color&lt;&#x2F;span&gt;&lt;span&gt;=&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;#FFFFFC&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;ax.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;set_xlabel&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Temporada&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;ax.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;set_xticks&lt;&#x2F;span&gt;&lt;span&gt;(best_eps.Season)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;sns.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;despine&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;plt.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;show&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;8hevnmE.png&quot; alt=&quot;Gráfico mostrando o melhor episódio por temporada&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Podemos notar que o Snatch Game é o favorito em três temporadas diferentes, mostrando assim o quanto o público gosta desse challenge. Temos também em destaque a Grande Final da Nona Temporada, que foi a primeira final no estilo Lipsync For The Crown e nos deu o tão conhecido lipsync de So Emotional por Sasha Velour e Shea Coulee.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;media.giphy.com&#x2F;media&#x2F;3oKHWalGcgCRqvL4uQ&#x2F;giphy.gif&quot; alt=&quot;Sasha Velour revelando as pétalas embaixo de sua peruca&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;2-qual-o-melhor-snatch-game&quot;&gt;2 - Qual o melhor Snatch Game?&lt;&#x2F;h3&gt;
+&lt;p&gt;O Snatch Game é um dos desafios mais clássicos de Drag Race. Ele aparece em todas as temporadas, com exceção da primeira, e é muito amado pelos fãs. Usando o último gráfico já podemos ver qual o melhor, mas vamos ver a comparação entre todos. Aqui estamos filtrando somente as linhas em que o título do episódio contenha as palavras &lt;em&gt;Snatch Game&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;pe = df[df.Title.str.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;contains&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Snatch Game&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;)]&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;fig, ax = plt.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;subplots&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;figsize&lt;&#x2F;span&gt;&lt;span&gt;=(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;12&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;6&lt;&#x2F;span&gt;&lt;span&gt;))&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;rects = ax.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;bar&lt;&#x2F;span&gt;&lt;span&gt;(pe.Season, pe[&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Rating&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;], &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;color&lt;&#x2F;span&gt;&lt;span&gt;= bar_color)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;rect &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;rects:&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        height = rect.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get_height&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        ax.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;text&lt;&#x2F;span&gt;&lt;span&gt;(rect.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get_x&lt;&#x2F;span&gt;&lt;span&gt;() + rect.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get_width&lt;&#x2F;span&gt;&lt;span&gt;()&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2.&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.05&lt;&#x2F;span&gt;&lt;span&gt;*height,&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;                &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;%.1f&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39; % &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt;(height),&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ha&lt;&#x2F;span&gt;&lt;span&gt;=&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;center&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;va&lt;&#x2F;span&gt;&lt;span&gt;=&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;bottom&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;color &lt;&#x2F;span&gt;&lt;span&gt;= top_bar_text_color)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;ax.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;set_xlabel&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Temporada&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;ax.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;set_xticks&lt;&#x2F;span&gt;&lt;span&gt;(pe.Season)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;sns.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;despine&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;plt.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;show&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;F3Uw9zB.png&quot; alt=&quot;Nota de todos os Snatch Games&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Como já sabiamos, &lt;strong&gt;o melhor Snatch Game&lt;&#x2F;strong&gt; foi o da Sexta Temporada! Realmente tivemos ótimas performances nesse ano: Bianca Del Rio como Judge Judy (uma das personagens favoritas da RuPaul), Adore Delano como Anna Nicole Smith e, a vencedora do desafio, BenDeLaCreme como Maggie Smith.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;media.giphy.com&#x2F;media&#x2F;3oriNOpTC2NHEDpTWM&#x2F;giphy.gif&quot; alt=&quot;BenDeLaCreme interpretando Maggie Smith&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Em &lt;strong&gt;segundo lugar&lt;&#x2F;strong&gt; temos a Quarta Temporada! A ganhadora desse episódio foi a Chad Michaels, interpretando, obviamete, a Cher!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;media.giphy.com&#x2F;media&#x2F;JFsnpzgST6vao&#x2F;giphy.gif&quot; alt=&quot;Chad Michaels como Cher&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;3-qual-a-temporada-mais-bem-avaliada&quot;&gt;3 - Qual a temporada mais bem avaliada?&lt;&#x2F;h3&gt;
+&lt;p&gt;Chegamos a pergunta final: Qual a melhor temporada?? Aqui, eu usarei a mediana das notas dos episódios para calcular a nota da temporada. Mas porque a mediana? E porque não a média? Bem, a média nos daria um valor que é afetado por episódios muito ruins ou episódios muito bons. Isso quer dizer que uma temporada média com um episódio muito bom poderia ser considerada boa, mas um episódio compensa por toda uma temporada mediana? Bem, eu acho que não, então usarei a mediana para eliminar essa sensibilidade dos resultados.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span&gt;ps = df.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;groupby&lt;&#x2F;span&gt;&lt;span&gt;([&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Season&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;]).&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;median&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;fig, ax = plt.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;subplots&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;figsize&lt;&#x2F;span&gt;&lt;span&gt;=(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;12&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;6&lt;&#x2F;span&gt;&lt;span&gt;))&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;rects = ax.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;bar&lt;&#x2F;span&gt;&lt;span&gt;(ps.index, ps[&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Rating&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;], &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;color&lt;&#x2F;span&gt;&lt;span&gt;= bar_color)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;rect &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span&gt;rects:&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        height = rect.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get_height&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        ax.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;text&lt;&#x2F;span&gt;&lt;span&gt;(rect.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get_x&lt;&#x2F;span&gt;&lt;span&gt;() + rect.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get_width&lt;&#x2F;span&gt;&lt;span&gt;()&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2.&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1.05&lt;&#x2F;span&gt;&lt;span&gt;*height,&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;                &amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;%.1f&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39; % &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;float&lt;&#x2F;span&gt;&lt;span&gt;(height),&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;ha&lt;&#x2F;span&gt;&lt;span&gt;=&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;center&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;va&lt;&#x2F;span&gt;&lt;span&gt;=&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;bottom&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;color &lt;&#x2F;span&gt;&lt;span&gt;= top_bar_text_color)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;ax.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;set_xlabel&lt;&#x2F;span&gt;&lt;span&gt;(&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Temporada&lt;&#x2F;span&gt;&lt;span&gt;&amp;#39;)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;ax.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;set_xticks&lt;&#x2F;span&gt;&lt;span&gt;(ps.index)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;ax.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;get_yaxis&lt;&#x2F;span&gt;&lt;span&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;set_visible&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;False&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;sns.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;despine&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;plt.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;show&lt;&#x2F;span&gt;&lt;span&gt;()&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;i.imgur.com&#x2F;aVEwhUk.png&quot; alt=&quot;Nota de cada temporada&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Então, temos que a melhor temporada, definida pelo público, é a &lt;strong&gt;Sexta Temporada!&lt;&#x2F;strong&gt; Ela inclusive já havia figurado como Melhor Snatch Game (que é também considerado o melhor episódio entre todas as temporadas). Em segundo e terceiro lugar temos a &lt;strong&gt;quinta e a quarta&lt;&#x2F;strong&gt; temporada, respectivamente.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.out.com&#x2F;sites&#x2F;out.com&#x2F;files&#x2F;2013&#x2F;12&#x2F;10&#x2F;rpdr6slide1.jpg&quot; alt=&quot;Cast da sexta temporada&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;quot;Mas eu não concordo com esse resultado!!&amp;quot;&lt;&#x2F;strong&gt;. Bem, acontece. Mas é importante lembrar que isso vem da base de dados do IMDb, portanto só reflete a opinião dos usuários de lá. Pode ser que a maioria das pessoas não concorde com o resultado, e tá tudo bem! O importante mesmo é ter um show de grande representatividade como esse na TV e não importa quem os usuários do IMDb pensam que é melhor, com quem você se identifica ainda é a opinião mais importante.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;media.giphy.com&#x2F;media&#x2F;gkXcg0fmfy4V97fSdh&#x2F;giphy.gif&quot; alt=&quot;Rupaul falando &amp;quot;Everybody Say Love!&amp;quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Com isso, concluímos a Análise de Dados com RuPaul&#x27;s Drag Race. Claro, eu pdoeria fazer muito mais que isso, como analisar os All Stars e definir outras perguntas, mas acho que já foi conteúdo o suficiente. O código desse post pode ser encontrado &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;lucasjoviniano&#x2F;rpdr-eda&#x2F;blob&#x2F;master&#x2F;Rupaul.ipynb&quot;&gt;aqui&lt;&#x2F;a&gt;. No mais, obrigado e até a próxima!&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

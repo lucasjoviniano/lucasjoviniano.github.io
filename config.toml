@@ -13,8 +13,6 @@ theme = "codinfox-zola"
 
 generate_feed = true
 
-read_time = true
-
 taxonomies = [
   {name = "tags", lang = "en"},
   {name = "categories", feed = true, lang = "en"},
@@ -26,10 +24,20 @@ taxonomies = [
 highlight_code = true
 
 [extra]
+logo = "/logo.png"
+
 version = "0.0.1"
 copyrightyear = "2022"
+
+# Plugins
+mathjax = true # whether support mathjax
+google_analytics_token = "" # a UA-00000000-1 like code or leave blank if you don't want google analytics
+disqus_short_name = "codinfox-zola" # leave blank if you don't want disqus
+
 tag_page = "/tags/"
 category_page = "/categories/"
-logo = "/logo.png"
+
 image = "/img/curiosity_by_starsinmyfingertips_dakioyj-fullview.jpg"  # image for the home page
 caption = "Original Artwork &copy; <a href=\"https://www.deviantart.com/starsinmyfingertips/art/Curiosity-639126235\">2016 - 2020 StarsInMyFingertips</a>"  # caption for the home page image
+
+read_time = true
