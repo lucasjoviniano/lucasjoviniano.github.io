@@ -1,0 +1,35 @@
+# The URL the site will be built for
+base_url = "https://lucasjoviniano.github.io"
+title = "Lucas Joviniano"
+description = "Código. Livros. Linguagens."
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "codinfox-zola"
+
+generate_feed = true
+
+read_time = true
+
+taxonomies = [
+  {name = "tags", lang = "en"},
+  {name = "categories", feed = true, lang = "en"},
+]
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+version = "0.0.1"
+copyrightyear = "2022"
+tag_page = "/tags/"
+category_page = "/categories/"
+logo = "/logo.png"
+image = "/img/curiosity_by_starsinmyfingertips_dakioyj-fullview.jpg"  # image for the home page
+caption = "Original Artwork &copy; <a href=\"https://www.deviantart.com/starsinmyfingertips/art/Curiosity-639126235\">2016 - 2020 StarsInMyFingertips</a>"  # caption for the home page image
