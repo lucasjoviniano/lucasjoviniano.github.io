@@ -5,6 +5,9 @@ export default defineNuxtConfig({
     typescript: {
         shim: false
     },
+    modules: [    
+      '@nuxt/content'  
+    ],
     build: {
         postcss: {
           postcssOptions: {
