@@ -6,6 +6,9 @@
         <h1 class="lg:text-5xl text-2xl leading-normal font-semibold text-center">
           Olá, eu sou o Lucas!
         </h1>
+
+        <p class="pt-10 text-lg lg:text-2xl">Atualmente cursando <a href="https://www.ccp.ufv.br/?page_id=5" target="_blank" rel="noopener noreferrer">Ciência da Computação</a> na <a href="https://www.ufv.br/" target="_blank" rel="noopener noreferrer">Universidade Federal de Viçosa</a>. 
+        Trabalho em projetos Open Source na <a href="https://opensourcelabufv.github.io//">Open Source Lab UFV</a>. Amo o que faço e amo ficar cada vez melhor no que faço.</p>
       </section>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:justify-items-center">
@@ -49,3 +52,9 @@
     </main>
   </div>
 </template>
+
+<style scoped>
+a {
+    @apply underline text-yellowish
+}
+</style>

@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         'sans': 'Inter'
       },
+      colors: {
+        'yellowish': '#726012'
+      }
     },
   },
   plugins: [],
