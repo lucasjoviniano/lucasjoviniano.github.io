@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8'
     },
+    target: 'static',
     typescript: {
         shim: false
     },

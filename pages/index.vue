@@ -8,10 +8,32 @@
         </h1>
 
         <p class="pt-10 text-lg lg:text-2xl">Atualmente cursando <a href="https://www.ccp.ufv.br/?page_id=5" target="_blank" rel="noopener noreferrer">Ciência da Computação</a> na <a href="https://www.ufv.br/" target="_blank" rel="noopener noreferrer">Universidade Federal de Viçosa</a>. 
-        Trabalho em projetos Open Source na <a href="https://opensourcelabufv.github.io//">Open Source Lab UFV</a>. Amo o que faço e amo ficar cada vez melhor no que faço.</p>
+        Trabalho em projetos Open Source na <a href="https://opensourcelabufv.github.io//" target="_blank" rel="noopener noreferrer">Open Source Lab UFV</a>. Amo o que faço e amo ficar cada vez melhor no que faço.</p>
       </section>
+
+	  <section class="lg:px-[15%] px-[5%] lg:pt-20 pt-14">
+				<p
+					class="text-center uppercase font-medium tracking-wider mb-10 text-gray-500"
+				>
+					Social
+				</p>
+
+				<nav class="flex items-center space-x-7 text-gray-600 justify-center">
+					<template v-for="(n, i) in links" :key="`navLink-${i}`">
+						<a :href="n.url" class="inline-block nav-link hover:text-primary group" target="_blank" rel="noopener noreferrer">
+							<div class="flex items-center space-x-2">
+								<Icon :icon="n.icon" class="w-4 h-4" />
+								<span class="font-medium"> {{ n.name }}</span>
+							</div>
+							<div
+								class="h-0.5 w-4/5 bg-primary mt-1 -translate-y-full scale-0 group-hover:scale-100 group-hover:translate-y-full transition-all"
+							></div>
+						</a>
+					</template>
+				</nav>
+	  </section>
       
-      <section class="lg:px-[15%] px-[5%] lg:pt-20 pt-14">
+      <section class="lg:px-[15%] px-[5%] lg:pt-20 pt-14 pb-10">
 				<p
 					class="text-center uppercase font-medium tracking-wider mb-10 text-gray-500"
 				>
@@ -48,7 +70,7 @@
 								<li
 									class="list-item text-sm text-gray-600 hover:text-primary-900 underline underline-offset-4 decoration-wavy decoration-primary/40 hover:decoration-primary transition-all"
 								>
-									<NuxtLink :to="`/blog${b._path}`"> Get Started </NuxtLink>
+									<NuxtLink :to="`/blog${b._path}`"> Ler Mais </NuxtLink>
 								</li>
 							</ul>
 						</div>
@@ -60,9 +82,34 @@
 </template>
 
 <script setup>
+	import { Icon } from "@iconify/vue";
+
   	const { data: blogNav } = await useAsyncData("navigation", () => {
 		return fetchContentNavigation(queryContent("blog"));
 	});
+
+	const links = [
+		{
+			name: 'Instagram',
+			url: 'https://www.instagram.com/lucas.joviniano/',
+			icon: 'ant-design:instagram-filled'
+		},
+		{
+			name: 'Github',
+			url: 'https://github.com/lucasjoviniano',
+			icon: 'akar-icons:github-fill'
+		},
+		{
+			name: 'Letterboxd',
+			url: 'https://letterboxd.com/lucasjoviniano/',
+			icon: 'simple-icons:letterboxd'
+		},
+		{
+			name: 'Last.fm',
+			url: 'https://www.last.fm/user/lucasjoviniano',
+			icon: 'cib:last-fm'
+		}
+	];
 </script>
 
 <style scoped>

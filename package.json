@@ -4,7 +4,8 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "devDependencies": {
     "@iconify/vue": "^3.2.1",
@@ -13,6 +14,7 @@
     "@nuxtjs/tailwindcss": "^5.3.1",
     "@tailwindcss/typography": "^0.5.4",
     "nuxt": "3.0.0-rc.6",
+    "push-dir": "^0.4.1",
     "sass": "^1.54.0"
   },
   "dependencies": {}
