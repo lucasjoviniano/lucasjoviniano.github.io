@@ -5,7 +5,6 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8'
     },
-    target: 'static',
     ssr: false,
     typescript: {
         shim: false
@@ -36,7 +35,4 @@ export default defineNuxtConfig({
           },
         },
       },
-      css: [
-        "~/assets/css/tailwind.css"
-      ],
 })
