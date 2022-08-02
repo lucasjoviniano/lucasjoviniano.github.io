@@ -2,12 +2,27 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
+    head: {
+      charset: 'utf-8'
+    },
     typescript: {
         shim: false
     },
     modules: [    
-      '@nuxt/content'  
+      '@nuxt/content',
+      '@nuxtjs/tailwindcss'
     ],
+    content: {
+      markdown: {
+        toc: {
+          depth: 3,
+          searchDepth: 3
+        }
+      },
+      highlight: {
+        theme: 'dracula-soft'
+      }
+    },
     build: {
         postcss: {
           postcssOptions: {

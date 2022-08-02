@@ -1,5 +1,7 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
+  plugins: [
+    require("@tailwindcss/typography")
+  ],
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -7,6 +9,7 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -17,5 +20,4 @@ module.exports = {
       }
     },
   },
-  plugins: [],
 }

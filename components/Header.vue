@@ -9,9 +9,9 @@
                     home
                 </NuxtLink>
             </span>
-            <span href="/blog" class="block mt-4 md:inline-block md:mt-0 mr-4 underline">
-                <NuxtLink to="/blog">
-                    posts
+            <span class="block mt-4 md:inline-block md:mt-0 mr-4 underline">                
+                <NuxtLink to="/now">
+                    now
                 </NuxtLink>
             </span>
             <span href="/recommendations" class="block mt-4 md:inline-block md:mt-0 mr-4 underline">
@@ -19,12 +19,6 @@
                     recomendações
                 </NuxtLink>
             </span>
-            <a href="#" class="block mt-4 md:inline-block md:mt-0 mr-4 underline">
-                ouvindo
-            </a>
-            <a href="#" class="block mt-4 md:inline-block md:mt-0 mr-4 underline">
-                assistindo
-            </a>
         </div>
     </nav>
 </template>
