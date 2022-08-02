@@ -6,6 +6,7 @@ export default defineNuxtConfig({
       charset: 'utf-8'
     },
     target: 'static',
+    ssr: false,
     typescript: {
         shim: false
     },
