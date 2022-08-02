@@ -10,7 +10,8 @@ export default defineNuxtConfig({
     },
     modules: [    
       '@nuxt/content',
-      '@nuxtjs/tailwindcss'
+      '@nuxtjs/tailwindcss',
+      '@nuxt/image-edge',
     ],
     content: {
       markdown: {
