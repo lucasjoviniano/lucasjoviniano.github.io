@@ -1,23 +1,13 @@
 module.exports = {
-  plugins: [
-    require("@tailwindcss/typography")
-  ],
-  content: [
-    "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./nuxt.config.{js,ts}",
-  ],
-  darkMode: 'class',
+  content: ["./**/*.html"],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
-      fontFamily: {
-        'sans': 'Inter'
-      },
-      colors: {
-        'yellowish': '#726012'
-      }
+      colors: {},
     },
   },
-}
+  variants: {},
+  plugins: [require("@tailwindcss/typography")],
+};

@@ -1,0 +1,28 @@
+---
+layout: default
+title: jovi.
+path: home
+---
+
+<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
+  <section class="pt-20 px-10">
+    <h1 class="lg:text-5xl text-2xl leading-normal font-semibold text-center">
+      Olá, eu sou o Lucas!
+    </h1>
+
+    <p class="pt-10 text-lg lg:text-2xl">
+      Atualmente cursando <a class="text-[#726012] underline" href="https://www.ccp.ufv.br/?page_id=5" target="_blank" rel="noopener noreferrer">Ciência da Computação</a> na <a class="text-[#726012] underline" href="https://www.ufv.br/" target="_blank" rel="noopener noreferrer">Universidade Federal de Viçosa</a>.
+      Trabalho em projetos Open Source na <a class="text-[#726012] underline" href="https://opensourcelabufv.github.io//" target="_blank" rel="noopener noreferrer">Open Source Lab UFV</a>. Amo o que faço e amo ficar cada vez melhor no que faço.
+    </p>
+  </section>
+  <nav class="flex items-center space-x-7 text-gray-600 justify-center pt-10">
+    {% for n in quicklinks.links %}
+    <a class="text-[#726012] underline" href="{{n.url}}" class="inline-block nav-link hover:text-primary group" target="_blank" rel="noopener noreferrer">
+      <div class="flex items-center space-x-2">
+        <span class="iconify" data-icon="{{n.icon}}"></span>
+        <span class="font-medium"> {{ n.name }}</span>
+      </div>
+    </a>
+    {% endfor %}
+  </nav>
+</div>

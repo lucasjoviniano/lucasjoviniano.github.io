@@ -1,42 +1,60 @@
-# Nuxt 3 Minimal Starter
+# Neat Starter
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Starter Template for **N**etlify CMS, **E**leventy, **A**lpine JS & **T**ailwind CSS
 
-## Setup
+## Live Demo
 
-Make sure to install the dependencies:
+[https://neat-starter.netlify.app/](https://neat-starter.netlify.app/)
 
-```bash
-# yarn
-yarn install
+### Technologies used:
 
-# npm
+- [Netlify CMS](https://www.netlifycms.org/)
+- [Eleventy](https://www.11ty.dev/)
+- [Alpine.js](https://github.com/alpinejs/alpine)
+- [Tailwind CSS](https://tailwindcss.com/)
+
+| ![image](https://user-images.githubusercontent.com/1884712/93762662-a62e4700-fc2d-11ea-9b2c-fda9f503402b.png) |
+| ------------------------------------------------------------------------------------------------------------- |
+
+
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/surjithctly/neat-starter&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a>
+
+## Getting Started
+
+Detailed instructions are available in my blog. [Check it out](https://blog.surjithctly.in/neat-stack-create-a-static-website-with-netlify-cms-eleventy-alpinejs-and-tailwindcss)
+
+### 1\. Clone this Repository
+
+```
+git clone https://github.com/surjithctly/neat-starter.git
+```
+
+### 2\. Navigate to the directory
+
+```
+cd neat-starter
+```
+
+### 3\. Install dependencies
+
+```
 npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
 
-## Development Server
+### 4\. Build the project to generate the first CSS
 
-Start the development server on http://localhost:3000
+This step is only required the very first time.
 
-```bash
-npm run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
 npm run build
 ```
 
-Locally preview production build:
+### 5\. Run Eleventy
 
-```bash
-npm run preview
+```
+npm run start
 ```
 
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+## Author
+
+Surjith S M ( [@surjithctly](https://surjithctly.in/) )

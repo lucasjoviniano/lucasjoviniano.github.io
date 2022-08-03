@@ -1,0 +1,6 @@
+---
+items:
+  - text: Now
+    url: "/now"
+  - text: Blog
+    url: "/blog"
