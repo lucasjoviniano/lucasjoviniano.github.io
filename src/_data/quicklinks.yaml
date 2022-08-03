@@ -1,0 +1,14 @@
+---
+links:
+  - name: Instagram
+    url: https://www.instagram.com/lucas.joviniano/
+    icon: ant-design:instagram-filled
+  - name: Github
+    url: https://github.com/lucasjoviniano
+    icon: akar-icons:github-fill
+  - name: Letterboxd
+    url: https://letterboxd.com/lucasjoviniano/
+    icon: simple-icons:letterboxd
+  - name: Last.fm
+    url: https://www.last.fm/user/lucasjoviniano
+    icon: cib:last-fm
