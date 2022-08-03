@@ -1,0 +1,78 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Análise de Dados e RuPaul&#39;s Drag Race</title><meta name="description" content="Análise de dados sobre as temporadas regulares do reality show RuPaul&#39;s Drag Race"><link rel="stylesheet" type="text/css" href="/static/css/style.css"><link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css"></head><body><div class="w-full"><nav class="flex items-center justify-center lg:justify-between flex-wrap p-6 lg:px-0 container mx-auto" x-data="{ isOpen: false }" @keydown.escape="isOpen = false" @click.away="isOpen = false"><a href="/"><span class="before:inline-block after:inline-block align-middle font-bold text-2xl mr-16 before:mr-4 after:ml-4 hover:before:translate-x-2 hover:after:-translate-x-2 before:content-['{'] after:content-['}'] before:duration-300 after:duration-300 before:transition-transform after:transition-transform pl-10 hover:text-[#726012]">jovi.</span> </a><button @click="isOpen = !isOpen" type="button" class="ml-auto block lg:hidden px-2 text-primary-500 hover:text-primary-500 focus:outline-none focus:text-primary-500" :class="{ 'transition transform-180': isOpen }" aria-label="Menu"><svg class="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path x-show="isOpen" fill-rule="evenodd" clip-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"/><path x-show="!isOpen" fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/></svg></button><div class="w-full flex-grow lg:flex lg:items-center lg:w-auto text-center" :class="{ 'block shadow-3xl': isOpen, 'hidden': !isOpen }" x-show.transition="true"><ul class="pt-6 lg:pt-0 list-reset lg:flex justify-end flex-1 items-center"><li class="nav__item mr-3"><a @click="isOpen = false" class="text-ml inline-block text-gray-500 no-underline hover:text-[#726012] py-2 px-4" href="/now">Now</a></li><li class="nav__item mr-3"><a @click="isOpen = false" class="text-ml inline-block text-gray-500 no-underline hover:text-[#726012] py-2 px-4" href="/blog">Blog</a></li></ul></div></nav></div><div class="container max-w-4xl mt-6 px-6"><div class="pb-5 mb-5 border-b border-gray-100"><h1 class="font-bold text-5xl">Análise de Dados e RuPaul&#39;s Drag Race</h1><p class="text-center text-base leading-6 font-medium text-gray-500"><time>19 Jun 2020 by <a></a></time></p></div><article class="prose lg:prose-xl my-4 mx-auto"><h1>Análise de Dados e RuPaul's Drag Race</h1><p><img src="https://media.giphy.com/media/W1SYNTF2HmihUGnOWX/giphy.gif" alt="RuPaul falando &quot;Hello, Hello, Hello&quot;"></p><p>Uuuuh girl! Estamos naquela época do ano muito conhecida pelos fãs de Drag Race: quando a RuPaul lança uma temporada atrás da outra pra alimentar os fãs sedentos. Já tivemos a 12ª temporada, o RuPaul's Secret Celebrity Drag Race, estamos tendo o All Stars 5 e já tem Drag Race Canada confirmada para julho!</p><p>O show conquistou muitos espectadores durante suas 12 temporadas regulares, rendendo assim diversos spin-offs. Mas as temporadas regulares ainda são o show principal. Com essa legião de pessoas assistindo, e ainda por ser um show de competição, as pessoas costumam comparar com frequência as temporadas para determinar qual é a melhor. Se você já acompanhou alguma dessas discussões, já deve ter visto o quanto são acaloradas.</p><p>Tendo isso em mente, me veio a seguinte pergunta: É possível determinar qual é a melhor temporada de RuPaul's Drag Race usando análise de dados? Bem, teoricamente sim. Eu só precisaria de uma base de dados para trabalhar e uma métrica para definir o que é melhor. Assim, resolvi tentar responder essa pergunta. <strong>So, start your engines, and may the best season... win!</strong></p><p><img src="https://media.giphy.com/media/xUOwGfqVY7J3fQpi3C/giphy.gif" alt="RuPaul levantando a mão"></p><p>Para isso, escolhi a base de dados do <a href="https://www.imdb.com/">IMDB</a>. E a métrica, óbviamente, será as notas dadas pelos usuários da plataforma. E na parte tech? Bem, escolhi python por um simples motivo: a biblioteca imdbpy. Ela nos permite acessar facilmente os dados do IMDb. Na parte da visualização, usaremos matplotlib com seaborn, além de pandas para manipular os dados. Então, vamos ao código!</p><h2>Carregando os Dados</h2><p>Primeiro, importamos as biblotecas e defiimos algumas configurações básicas para a visualização dos gráficos.</p><pre><code>from imdb import IMDb
+import pandas as pd
+import matplotlib.pyplot as plt
+
+import seaborn as sns
+%matplotlib inline
+
+sns.set()
+sns.set_style(&quot;white&quot;)
+sns.set_context(&quot;notebook&quot;, font_scale=1.5)
+
+bar_color = '#E5989B'
+top_bar_text_color = '#6D6875'
+</code></pre><p>Após isso, precisamos pegar os dados do IMDb. Aqui, pegamos os dados básicos que a biblioteca trás para a gente, e depois atualizamos com algumas informações extras.</p><pre><code>ia = IMDb()
+rp = ia.get_movie('1353056')
+ia.update(rp, ['episodes', 'vote details'])
+</code></pre><p>Com isso, temos todas as infomações que precisamos. Porém, temos também várias informações que não precisamos. Para facilitar o trabalho de análise, vamos estruturar os dados de outra forma usando um DataFrame do pandas.</p><pre><code># Variáveis auxiliares
+season = []
+title = []
+rating = []
+ep = []
+votes = []
+
+for s in rp['episodes']:
+    for i, e in rp['episodes'][s].items():
+        season.append(s)
+        title.append(e['title'])
+        rating.append(e['rating'])
+        votes.append(e['votes'])
+        ep.append(i)
+
+df = pd.DataFrame(list(zip(title, season, ep, rating, votes)), columns = ['Title', 'Season', 'Episode', 'Rating', 'Votes'])
+df.head(10)
+</code></pre><p>No código acima, pegamos somente as informações: Título do Eṕisódio, sua respectiva temporada, seu número, sua nota e quantidade de pessoas que avaliaram. Essas informações são mais do que suficientes para o que queremos. Aqui está uma amostra de como os dados estão armazenados.</p><p><img src="https://i.imgur.com/hGRQs21.png" alt="Primeiros 10 episódios salvos"></p><h2>Analisando os Dados</h2><p>Com isso, podemos começar as visualizações! Mas primero, vamos definir quais perguntas eu quero responder:</p><ol><li>Qual é o melhor episódio de cada temporada?</li><li>Qual o melhor Snatch Game?</li><li>Qual a temporada mais bem avaliada?</li></ol><p>Com as perguntas definidas, vamos começar a respondê - las.</p><h3>Qual o melhor episódio de cada temporada?</h3><p>Conseguir essa informação é simples, só precisamos pedir para o pandas nos retornar a linha com o maior valor na coluna Rating. A primeira linha do código abaixo cuida disso, enquanto as próximas cuidam da visualização.</p><pre><code>best_eps = df.iloc[df.groupby('Season')['Rating'].idxmax()]
+
+fig, ax = plt.subplots(figsize=(12, 6))
+rects = ax.bar(best_eps.Season, best_eps['Rating'], color= bar_color)
+for i in range(len(rects)):
+        height = rects[i].get_height()
+        ax.text(rects[i].get_x() + rects[i].get_width()/2, 0.5,
+                str(best_eps.iloc[i, : ]['Episode']) + ' - ' + best_eps.iloc[i, : ]['Title'],
+                ha='center', va='bottom', rotation = 90, color='#FFFFFC')
+
+ax.set_xlabel('Temporada')
+ax.set_xticks(best_eps.Season)
+sns.despine()
+plt.show()
+</code></pre><p><img src="https://i.imgur.com/8hevnmE.png" alt="Gráfico mostrando o melhor episódio por temporada"></p><p>Podemos notar que o Snatch Game é o favorito em três temporadas diferentes, mostrando assim o quanto o público gosta desse challenge. Temos também em destaque a Grande Final da Nona Temporada, que foi a primeira final no estilo Lipsync For The Crown e nos deu o tão conhecido lipsync de So Emotional por Sasha Velour e Shea Coulee.</p><p><img src="https://media.giphy.com/media/3oKHWalGcgCRqvL4uQ/giphy.gif" alt="Sasha Velour revelando as pétalas embaixo de sua peruca"></p><h3>Qual o melhor Snatch Game?</h3><p>O Snatch Game é um dos desafios mais clássicos de Drag Race. Ele aparece em todas as temporadas, com exceção da primeira, e é muito amado pelos fãs. Usando o último gráfico já podemos ver qual o melhor, mas vamos ver a comparação entre todos. Aqui estamos filtrando somente as linhas em que o título do episódio contenha as palavras <em>Snatch Game</em>.</p><pre><code>pe = df[df.Title.str.contains('Snatch Game')]
+fig, ax = plt.subplots(figsize=(12, 6))
+
+rects = ax.bar(pe.Season, pe['Rating'], color= bar_color)
+for rect in rects:
+        height = rect.get_height()
+        ax.text(rect.get_x() + rect.get_width()/2., 1.05*height,
+                '%.1f' % float(height),
+                ha='center', va='bottom', color = top_bar_text_color)
+
+ax.set_xlabel('Temporada')
+ax.set_xticks(pe.Season)
+sns.despine()
+plt.show()
+</code></pre><p><img src="https://i.imgur.com/F3Uw9zB.png" alt="Nota de todos os Snatch Games"></p><p>Como já sabiamos, <strong>o melhor Snatch Game</strong> foi o da Sexta Temporada! Realmente tivemos ótimas performances nesse ano: Bianca Del Rio como Judge Judy (uma das personagens favoritas da RuPaul), Adore Delano como Anna Nicole Smith e, a vencedora do desafio, BenDeLaCreme como Maggie Smith.</p><p><img src="https://media.giphy.com/media/3oriNOpTC2NHEDpTWM/giphy.gif" alt="BenDeLaCreme interpretando Maggie Smith"></p><p>Em <strong>segundo lugar</strong> temos a Quarta Temporada! A ganhadora desse episódio foi a Chad Michaels, interpretando, obviamete, a Cher!</p><p><img src="https://media.giphy.com/media/JFsnpzgST6vao/giphy.gif" alt="Chad Michaels como Cher"></p><h3>Qual a temporada mais bem avaliada?</h3><p>Chegamos a pergunta final: Qual a melhor temporada?? Aqui, eu usarei a mediana das notas dos episódios para calcular a nota da temporada. Mas porque a mediana? E porque não a média? Bem, a média nos daria um valor que é afetado por episódios muito ruins ou episódios muito bons. Isso quer dizer que uma temporada média com um episódio muito bom poderia ser considerada boa, mas um episódio compensa por toda uma temporada mediana? Bem, eu acho que não, então usarei a mediana para eliminar essa sensibilidade dos resultados.</p><pre><code>ps = df.groupby(['Season']).median()
+
+fig, ax = plt.subplots(figsize=(12, 6))
+
+rects = ax.bar(ps.index, ps['Rating'], color= bar_color)
+for rect in rects:
+        height = rect.get_height()
+        ax.text(rect.get_x() + rect.get_width()/2., 1.05*height,
+                '%.1f' % float(height),
+                ha='center', va='bottom', color = top_bar_text_color)
+
+ax.set_xlabel('Temporada')
+ax.set_xticks(ps.index)
+ax.get_yaxis().set_visible(False)
+sns.despine()
+plt.show()
+</code></pre><p><img src="https://i.imgur.com/aVEwhUk.png" alt="Nota de cada temporada"></p><p>Então, temos que a melhor temporada, definida pelo público, é a <strong>Sexta Temporada!</strong> Ela inclusive já havia figurado como Melhor Snatch Game (que é também considerado o melhor episódio entre todas as temporadas). Em segundo e terceiro lugar temos a <strong>quinta e a quarta</strong> temporada, respectivamente.</p><p><img src="https://www.out.com/sites/out.com/files/2013/12/10/rpdr6slide1.jpg" alt="Cast da sexta temporada"></p><p><strong>&quot;Mas eu não concordo com esse resultado!!&quot;</strong>. Bem, acontece. Mas é importante lembrar que isso vem da base de dados do IMDb, portanto só reflete a opinião dos usuários de lá. Pode ser que a maioria das pessoas não concorde com o resultado, e tá tudo bem! O importante mesmo é ter um show de grande representatividade como esse na TV e não importa quem os usuários do IMDb pensam que é melhor, com quem você se identifica ainda é a opinião mais importante.</p><p><img src="https://media.giphy.com/media/gkXcg0fmfy4V97fSdh/giphy.gif" alt="Rupaul falando &quot;Everybody Say Love!&quot;"></p><p>Com isso, concluímos a Análise de Dados com RuPaul's Drag Race. Claro, eu pdoeria fazer muito mais que isso, como analisar os All Stars e definir outras perguntas, mas acho que já foi conteúdo o suficiente. O código desse post pode ser encontrado <a href="https://github.com/lucasjoviniano/rpdr-eda/blob/master/Rupaul.ipynb">aqui</a>. No mais, obrigado e até a próxima!</p></article></div><footer class="bottom-0 text-center w-full py-4"><small class="text-gray-500">Copyright © Neat Starter 2020. Made with ❤ by <a href="https://surjithctly.in/" target="_blank" class="underline">Surjith S M</a> • <a href="https://github.com/surjithctly/neat-starter" class="underline" target="_blank" rel="noopener">View on Github</a></small></footer><script src="/static/js/alpine.js"></script><script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script></body></html>
